@@ -29,15 +29,6 @@ public class LeaderBoardActivity extends Activity {
         addLayout("8.", "Иванов Иван", "10 lvl");
         addLayout("9.", "Иванов Иван", "7 lvl");
         addLayout("10.", "Иванов Иван", "3 lvl");
-
-        Button btn = findViewById(R.id.back);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(LeaderBoardActivity.this, MainActivity.class);
-                startActivity(i);
-            }
-        });
     }
 
     private void addLayout(String numberStr, String nameStr, String scoreStr) {

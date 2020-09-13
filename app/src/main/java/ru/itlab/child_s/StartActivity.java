@@ -44,7 +44,7 @@ public class StartActivity extends Activity {
                 if (logpass.indexOf(new Pair(
                         text.getText().toString().toLowerCase(),
                         password.getText().toString().toLowerCase())) != -1) {
-                    Intent i = new Intent(StartActivity.this, LeaderBoardActivity.class);
+                    Intent i = new Intent(StartActivity.this, MainActivity.class);
                     startActivity(i);
                 } else {
                     error.setVisibility(View.VISIBLE);
