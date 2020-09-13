@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LeaderBoardActivity"></activity>
+        <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

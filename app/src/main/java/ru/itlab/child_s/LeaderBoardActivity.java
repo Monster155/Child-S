@@ -1,10 +1,12 @@
 package ru.itlab.child_s;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class LeaderBoardActivity extends Activity {
@@ -27,6 +29,15 @@ public class LeaderBoardActivity extends Activity {
         addLayout("8.", "Иванов Иван", "10 lvl");
         addLayout("9.", "Иванов Иван", "7 lvl");
         addLayout("10.", "Иванов Иван", "3 lvl");
+
+        Button btn = findViewById(R.id.back);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LeaderBoardActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void addLayout(String numberStr, String nameStr, String scoreStr) {

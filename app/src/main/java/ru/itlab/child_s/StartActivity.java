@@ -35,6 +35,7 @@ public class StartActivity extends Activity {
         text = findViewById(R.id.editText);
         password = findViewById(R.id.editTextPassword);
         logo = findViewById(R.id.imageView);
+        logo.setImageResource(R.drawable.logo);
         error = findViewById(R.id.textView);
 
         login.setOnClickListener(new View.OnClickListener() {
